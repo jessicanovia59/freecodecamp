@@ -1,0 +1,99 @@
+/* vh (viewport height) or vw (viewport width)
+   a unit that uses the viewport percentage to calculate the desired height or wight*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+/* rem or em 
+   em is a unit that affected by the elemet that wraps it.
+   if we are using div with font-size 12px, then 1em is 12px, em is used
+   base on the font-size of the section.
+
+   rem (root-em) is a unit that affected by root or html. 
+   If html is set to have font-size of 16px then 1rem is 16px.
+   now days we only use rem not em, 1rem is equal to 1em
+
+src: https://rifatnajmi.com/design/px-em-rem/ */
+
+/* Margin: top right bottom left;
+   Margin: top right-left bottom;
+   Margin: top-bottom right-left; 
+
+   auto -> calculated automatically by browser
+   length -> put in the desired length in px, pt, rem, cm, etc.
+   % -> specified the margin using % of width of the containing element
+   inherit -> specified margin should be inherited from the parent element
+   
+src: https://www.w3schools.com/css/css_margin.asp */
+
+h1, p {
+   margin: 1em auto;
+   text-align: center;
+}
+
+form {
+   margin: 0 auto;
+   width: 60vw;
+   max-width: 500px;
+   min-width: 300px;
+   padding: 2em;
+}
+
+fieldset {
+   border: none;
+   padding: 2rem 0;
+   border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+   border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+   width: 100%;
+   margin: 10px 0 0 0;
+   min-height: 2em;
+}
+
+.inline {
+   width: unset;
+   margin: 0 0.5em 0 0;
+   vertical-align: middle;
+}
+
+input[type="submit"] {
+   display: block;
+   width: 60%;
+   margin: 1em auto;
+   height: 2em;
+   font-size: 1.1rem;
+   background-color: #3b3b4f;
+   border-color: white;
+   min-width: 300px;
+}
+
+input, textarea {
+   background-color: #0a0a23;
+   border: 1px solid #0a0a23;
+   color: #ffffff;
+}
+
+input[type="file"] {
+   padding: 1px 2px;
+}
+
+a {
+   color: #dfdfe2;
+}
